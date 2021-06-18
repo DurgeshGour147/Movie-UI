@@ -10,8 +10,6 @@ import {
 } from "../../models/userDetailModel";
 import SendRequest from "../../service/sendRequest.service";
 import {
-  fetchMovieDetailRequest,
-  fetchMovieDetailResponse,
   fetchMovieListRequest,
   fetchMovieListResponse,
 } from "../../models/movieModel";
@@ -153,9 +151,11 @@ const MovieStore = (): ReactElement => {
     <div style={{ padding: "50px" }}>
       <div>
         <Row gutter={24}>
-          <Col md={8}>
-            <p> Welcome: {userRoleName} User</p>
-          </Col>
+          {userDetail && (
+            <Col md={8}>
+              <p> Welcome: {userRoleName} User</p>
+            </Col>
+          )}
           <Col md={6}>
             <select
               style={{ width: "100%" }}
