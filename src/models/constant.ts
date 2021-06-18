@@ -8,7 +8,6 @@ export const APIendpoints = {
 };
 
 export const APIUrl = "https://localhost:44353/";
-// export const APIUrl = "http://192.168.2.112:6001/";
 
 export const routerPath = {
     MovieStore: "/MovieStore",
