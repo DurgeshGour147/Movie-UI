@@ -106,6 +106,7 @@ const MovieStore = (): ReactElement => {
   ];
 
   const data = [] as any;
+
   if (movieList) {
     movieList.forEach((item: any, index: any) => {
       data.push({
