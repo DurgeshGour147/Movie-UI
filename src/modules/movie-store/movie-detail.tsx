@@ -52,7 +52,7 @@ const MovieDetail = ({
 
   return (
     <>
-      {movieDetail ? (
+      {movieDetail && (
         <>
           <div></div>
           <div style={{ padding: "50px" }}>
@@ -101,10 +101,6 @@ const MovieDetail = ({
               </Descriptions>
             </Col>
           </div>
-        </>
-      ) : (
-        <>
-          <Skeleton active={true} paragraph={{ rows: 6 }} />
         </>
       )}
     </>
