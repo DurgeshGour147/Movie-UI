@@ -202,7 +202,7 @@ const MovieStore = (): ReactElement => {
             return {
               onClick: (event: any) => {
                 onRowClick(record);
-              }, // click row
+              },
             };
           }}
         />
