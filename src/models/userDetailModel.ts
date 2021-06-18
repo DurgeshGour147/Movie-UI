@@ -9,7 +9,6 @@ export interface userDetailResponse {
     isSuccess: boolean;
     errorMessage?: any;
     httpStatusCode: number;
-
 }
 
 export interface Role {
