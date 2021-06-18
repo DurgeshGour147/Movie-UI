@@ -12,7 +12,6 @@ import { ArrowLeftOutlined } from "@ant-design/icons";
 
 const MovieDetail = ({
   match: {
-    path,
     params: { id: title },
   },
 }: any): ReactElement => {
